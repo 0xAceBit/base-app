@@ -1,30 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TokenScan - Contract Auditor</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h4>Welcome to the Base App</h4>
-    <p>This is a simple base application template.</p>
 
-    <nav id = "navbar">
+  <!-- Header -->
 
-        <img src="" alt="Logo" class="logo">    
-        <div class = "main-menu">
-            <img src="">
-             <a href="#">Home</a>
-             <a href="#">About</a>
-             <a href="#">Contact</a>    
-        </div>
-        <div class = "user-menu">
-            <img src="">
-             <a href="#">Login</a>
-             <a href="#">Register</a>
+  <header class="header">
+    <h1>TokenScan</h1>
+    <p>Smart Contract Scanner & Audit Tool</p>
+  </header>
 
-    </nav>
+  <!-- Main Container -->
+
+  <main class="container">
+
+```
+<!-- Scan Section -->
+<section class="scan-box">
+  <h2>Scan Token / Contract</h2>
+
+  <input 
+    type="text" 
+    id="contractInput" 
+    placeholder="Paste contract address here..."
+  />
+
+  <button id="scanBtn">Scan Contract</button>
+</section>
+
+<!-- Results Section -->
+<section class="results">
+  <h2>Audit Results</h2>
+
+  <div class="result-card">
+    <h3>Risk Score</h3>
+    <p id="riskScore">--</p>
+  </div>
+
+  <div class="result-card">
+    <h3>Warnings</h3>
+    <ul id="warningsList">
+      <li>No data yet</li>
+    </ul>
+  </div>
+
+  <div class="result-card">
+    <h3>Contract Details</h3>
+    <p id="contractDetails">Scan a contract to see details</p>
+  </div>
+</section>
+
+<!-- Save Report Section -->
+<section class="save-section">
+  <h2>Save Report</h2>
+
+  <input 
+    type="text" 
+    id="fileName" 
+    placeholder="Enter file name..."
+  />
+
+  <button id="saveBtn">Save Report</button>
+</section>
+```
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <p>Built for Base Ecosystem | ACE Project</p>
+  </footer>
+
+</body>
+</html>
+
 
 
 
